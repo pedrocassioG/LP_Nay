@@ -180,8 +180,16 @@ img {
 
 .content-right {
   grid-column: 2 / 3;
-  padding-left: 10%; /* Posiciona todo o conteúdo na segunda coluna (direita) */
-  padding-right: 10%; /* Espaçamento para não colar na borda direita */
+  padding-left: 10%;
+  padding-right: 5%;
+  text-align: right; /* << 1. ALINHA TODOS OS TEXTOS À DIREITA */
+}
+
+.checklist {
+  display: flex; /* Adicionado para controlar o alinhamento dos itens */
+  flex-direction: column; /* Para empilhar os itens verticalmente */
+  align-items: flex-end; /* << 2. ALINHA OS ITENS DA LISTA À DIREITA */
+  margin-bottom: 3rem;
 }
 
 .pitch-section h2 {
@@ -190,16 +198,11 @@ img {
   color: var(--cor-ver-oliva-claro);
   font-weight: 300;
   text-transform: uppercase;
-  line-height: 1.4;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .pitch-section h2 .highlight-orange {
   color: var(--cor-bege-dourado); /* Cor laranja para o trecho destacado */
-}
-
-.checklist {
-  margin-bottom: 3rem;
 }
 
 .check-item {
@@ -207,7 +210,7 @@ img {
   align-items: center;
   gap: 3rem; /* Espaço entre o ícone e o texto */
   margin-bottom: 1.5rem;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 
@@ -217,7 +220,7 @@ img {
 }
 
 .final-text {
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-style: italic; /* Texto em itálico como no design */
   line-height: 1.6;
 }
