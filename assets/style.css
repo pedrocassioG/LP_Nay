@@ -393,4 +393,48 @@ img {
 .final-text {
   font-size: 1.6rem;
 }
+.consultoria-section {
+  /* 1. TROCA a imagem de fundo pela versão mobile */
+  background-image: url('img/MOBILE_SECTION_teste3_IMG.png');
+  background-position: center top; /* Foca no topo da imagem */
+  background-size: cover;
+
+  /* 2. MUDA para uma coluna única com 3 linhas */
+  grid-template-columns: 1fr;
+  /* As 3 linhas, com base nas suas medidas, de forma proporcional */
+  grid-template-rows: 230fr 700fr 550fr;
+  min-height: 150vh; /* Altura maior para acomodar a imagem alta e o conteúdo */
+}
+
+/* Escondemos a coluna da esquerda que não é usada no mobile */
+.consultoria-left {
+  display: none;
+}
+
+/* A coluna da direita agora ocupa a tela toda e é posicionada no meio */
+.consultoria-right {
+  grid-column: 1 / 2; /* Ocupa a única coluna */
+  grid-row: 2 / 3;    /* << OCUPA A LINHA DO MEIO */
+  display: block;     /* Deixa de ser um grid aninhado */
+  align-self: center; /* Centraliza verticalmente o conteúdo na sua linha */
+}
+
+/* O conteúdo de texto é ajustado para o mobile */
+.consultoria-content {
+  /* Reseta as propriedades de grid que não são mais necessárias */
+  grid-row: auto; 
+  padding: 0 2.5rem; /* Padding lateral para o texto não colar nas bordas */
+  text-align: center; /* Centraliza todo o texto */
+}
+
+/* Reduzimos drasticamente as fontes do desktop */
+.consultoria-content p {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.consultoria-content h3 {
+  font-size: 3.2rem;
+  margin-bottom: 2.5rem;
+}
 }
