@@ -102,27 +102,36 @@ img {
 }
 
 .hero-subtitle {
+  display: inline-block; /* Permite fundo, padding e se ajusta ao conteúdo */
+  
+  /* Novas cores, como você pediu */
+  background-color: var(--cor-creme-claro);
+  color: var(--cor-verde-escuro);
+  
+  /* Estilo de "botão" */
+  padding: 1rem 2rem; /* Espaçamento interno para criar o corpo do "botão" */
+  border-radius: 5px; /* Bordas levemente arredondadas */
+  
+  /* Estilos de fonte que já tínhamos */
   font-family: var(--fonte-corpo);
   font-size: 2.2rem;
   font-weight: 600;
-  color: var(--cor-verde-escuro);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* Distância do sublinhado */
+  
+  /* Ajuste de posicionamento */
   margin-bottom: 2.5rem;
 }
 
-.hero-content p {
-  font-size: 1.8rem;
+.hero-text {
+  font-size: var(--fs-h3);
   line-height: 1.6;
-  color: var(--cor-verde-escuro);
+  color: var(--cor-creme-claro);
   margin-bottom: 2.5rem;
   max-width: 50ch; /* Limita a largura do parágrafo para melhor leitura */
 }
 
 .hero-label {
   font-family: var(--fonte-corpo);
-  font-size: 1.1rem;
+  font-size: var(--fs-h3);
   font-weight: 600;
   color: var(--cor-verde-escuro);
   text-transform: uppercase;
