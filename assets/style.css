@@ -1,3 +1,11 @@
+
+@font-face {
+  font-family: 'Montrek';
+  src: url('../fonts/montrek.ttf') format('truetype');
+  font-weight: normal; 
+  font-style: normal;
+}
+
 :root {
   --cor-verde-escuro: #283618;
   --cor-verde-oliva: #606C38;
@@ -5,5 +13,56 @@
   --cor-bege-dourado: #DDA15E;
   --cor-creme-claro: #FEFAE0;
 
-  /* Outras variáveis (fontes, espaçamentos) virão aqui no futuro */
+  --fonte-h1: 'Montrek', sans-serif;
+  --fonte-corpo: 'Manrope', sans-serif;
+  
+
+  --fs-base: 1.6rem;
+  --fs-h1: 4.8rem;
+  --fs-h2: 3.6rem;
+  --fs-h3: 2.4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; 
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  font-size: var(--fs-base);
+  font-weight: 600;
+}
+
+h1 {
+  font-family: var(--fonte-h1);
+  font-weight: normal;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-corpo);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+.container {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
