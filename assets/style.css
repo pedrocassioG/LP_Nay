@@ -1,7 +1,7 @@
 
 @font-face {
-  font-family: 'Montrek';
-  src: url('fonts/montrek.ttf') format('truetype');
+  font-family: 'Monolito';
+  src: url('fonts/MONOLITO.otf') format('opentype');
   font-weight: normal; 
   font-style: normal;
 }
@@ -12,8 +12,8 @@
   --cor-laranja-terracota: #BC6C25;
   --cor-bege-dourado: #DDA15E;
   --cor-creme-claro: #FEFAE0;
-
-  --fonte-h1: 'Montrek', sans-serif;
+  --cor-ver-oliva-claro: #cce289;
+  --fonte-h1: 'Monolito', sans-serif;
   --fonte-corpo: 'Manrope', sans-serif;
   
 
@@ -90,7 +90,7 @@ img {
 }
 
 .hero-content h1 {
-  font-size: var(--fs-h1); /* Usando a variável que você definiu */
+  font-size: 12rem; /* Usando a variável que você definiu */
   color: var(--cor-verde-escuro); /* Cor principal do H1 */
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -161,7 +161,66 @@ img {
   transform: translateY(-3px);
 }
 
+/* ======================================================= */
+/* PITCH SECTION                                           */
+/* ======================================================= */
+.pitch-section {
+  background-image: url('img/WEB_SESSÃO_2_IMG.png');
+  background-color: var(--cor-verde-escuro); /* Cor de fundo para garantir contraste */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  display: grid;
+  grid-template-columns: 40% 60%; /* Divide a seção, dando mais espaço à direita */
+  align-items: center;
+  padding: 8rem 0; /* Espaçamento vertical */
+  color: var(--cor-creme-claro); /* Cor padrão do texto para esta seção */
+}
+
+.content-right {
+  grid-column: 2 / 3;
+  padding-left: 10%; /* Posiciona todo o conteúdo na segunda coluna (direita) */
+  padding-right: 10%; /* Espaçamento para não colar na borda direita */
+}
+
+.pitch-section h2 {
+  font-family: var(--fonte-h1);
+  font-size: 10rem;
+  color: var(--cor-ver-oliva-claro);
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+
+.pitch-section h2 .highlight-orange {
+  color: var(--cor-bege-dourado); /* Cor laranja para o trecho destacado */
+}
+
+.checklist {
+  margin-bottom: 3rem;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 3rem; /* Espaço entre o ícone e o texto */
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.check-item img {
+  width: 24px; /* Tamanho fixo para os seus ícones */
+  height: 24px;
+}
+
+.final-text {
+  font-size: 1.8rem;
+  font-style: italic; /* Texto em itálico como no design */
+  line-height: 1.6;
+}
 
 /* ======================================================= */
 /* 6. RESPONSIVIDADE (MEDIA QUERIES)                       */
@@ -195,7 +254,7 @@ img {
   /* --- AJUSTES DE FONTE E ELEMENTOS ESPECÍFICOS --- */
 
   .hero-content h1 {
-    font-size: 2.8rem; /* Tamanho do título para mobile */
+    font-size: 4rem; /* Tamanho do título para mobile */
   }
   
   .hero-subtitle {
