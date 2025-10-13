@@ -66,3 +66,85 @@ img {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+/* HERO SECTION */
+.hero {
+  background-image: url('/assets/img/WEB_HEADER_IMG.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
+  min-height: 90vh;
+  color: var(--cor-verde-escuro); /* PERGUNTA: A cor do texto será esta? */
+}
+
+.hero-content {
+  grid-column: 1 / 2;
+  padding-left: 10%;
+  padding-right: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 5.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  font-family: var(--fonte-corpo);
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--cor-creme-claro); /* PERGUNTA: A cor do texto do botão será esta? */
+  background-color: var(--cor-verde-oliva); /* PERGUNTA: A cor de fundo do botão será esta? */
+  padding: 1.5rem 3rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--cor-verde-escuro);
+}
+
+@media (max-width: 768px) {
+  
+  /* AJUSTES NA SEÇÃO HERO PARA MOBILE */
+  .hero {
+    /* 1. TROCA a imagem de fundo pela versão mobile */
+    background-image: url('/assets/img/MOBILE_HEADER_IMG.png');
+    background-position: center center; /* Centraliza a nova imagem vertical */
+    
+    /* 2. Ajusta a grade para o layout vertical da nova imagem */
+    grid-template-columns: 1fr; /* Garante uma única coluna */
+    grid-template-rows: 55% 45%; /* Cria duas linhas para alinhar o conteúdo na parte laranja (55%) */
+    align-items: start; /* Alinha o conteúdo no topo da célula da grade */
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    /* 3. Posiciona o conteúdo na primeira linha (a área laranja da imagem) */
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    /* 4. Ajusta os espaçamentos para a nova imagem de fundo */
+    padding: 6rem 2rem 2rem 2rem; /* Mais espaço no topo para centralizar na área laranja */
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 4.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+  }
+}
