@@ -279,4 +279,48 @@ img {
     font-size: 1.4rem; /* Tamanho do botão drasticamente reduzido para caber */
     padding: 1.2rem 2.4rem; /* Padding do botão também menor */
   }
+
+.pitch-section {
+  background-image: url('img/MOBILE_SECTION_2_IMG.png');
+  background-position: center top;
+  background-size: cover;
+  
+  /* 1. CRIA AS DUAS LINHAS (CIMA E BAIXO) */
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 60%; /* Linha de cima com 40%, de baixo com 60% */
+
+  /* 3. ALINHA O CONTEÚDO NO TOPO DA SUA LINHA */
+  align-items: start; /* << O ajuste que você pediu */
+  
+  min-height: 100vh;
+  padding: 0;
+}
+
+.content-right {
+  /* 2. FORÇA O CONTEÚDO A FICAR NA SEGUNDA LINHA */
+  grid-row: 2 / 3; /* << ESTA É A LINHA CRÍTICA */
+  grid-column: 1 / 2;
+  
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.pitch-section h2 {
+  font-size: 4rem; /* Título menor para caber na tela */
+  margin-bottom: 2rem;
+}
+
+.checklist {
+  align-items: center; /* Centraliza os itens da lista no mobile */
+}
+
+.check-item {
+  justify-content: center; /* Centraliza o texto + ícone */
+  gap: 4rem; /* Reduz o espaçamento entre check e texto */
+  font-size: 1.6rem;
+}
+
+.final-text {
+  font-size: 1.6rem;
+}
 }
