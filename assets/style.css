@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'Montrek';
-  src: url('../fonts/montrek.ttf') format('truetype');
+  src: url('fonts/montrek.ttf') format('truetype');
   font-weight: normal; 
   font-style: normal;
 }
@@ -18,7 +18,7 @@
   
 
   --fs-base: 1.6rem;
-  --fs-h1: 4.8rem;
+  --fs-h1: 6.4rem;
   --fs-h2: 3.6rem;
   --fs-h3: 2.4rem;
 }
@@ -67,17 +67,20 @@ img {
   padding-right: 1.5rem;
 }
 /* HERO SECTION */
+/* ======================================================= */
+/* 5. ESTILOS DAS SEÇÕES                                   */
+/* ======================================================= */
+
+/* HERO SECTION - VERSÃO FINAL */
 .hero {
-  background-image: url('/assets/img/WEB_HEADER_IMG.png');
+  background-image: url('img/WEB_HEADER_IMG.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  
   display: grid;
   grid-template-columns: 55% 45%;
   align-items: center;
   min-height: 90vh;
-  color: var(--cor-verde-escuro); /* PERGUNTA: A cor do texto será esta? */
 }
 
 .hero-content {
@@ -87,14 +90,44 @@ img {
 }
 
 .hero-content h1 {
-  font-size: 5.2rem;
-  margin-bottom: 1.5rem;
+  font-size: var(--fs-h1); /* Usando a variável que você definiu */
+  color: var(--cor-verde-escuro); /* Cor principal do H1 */
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 span {
+  color: var(--cor-creme-claro); /* Cor especial apenas para o span */
+  text-shadow: 1px 1px 3px rgba(40, 54, 24, 0.4); /* Efeito de sombra para dar profundidade */
+}
+
+.hero-subtitle {
+  font-family: var(--fonte-corpo);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--cor-verde-escuro);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* Distância do sublinhado */
+  margin-bottom: 2.5rem;
 }
 
 .hero-content p {
   font-size: 1.8rem;
   line-height: 1.6;
+  color: var(--cor-verde-escuro);
+  margin-bottom: 2.5rem;
+  max-width: 50ch; /* Limita a largura do parágrafo para melhor leitura */
+}
+
+.hero-label {
+  font-family: var(--fonte-corpo);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--cor-verde-escuro);
+  text-transform: uppercase;
   margin-bottom: 3rem;
+  letter-spacing: 0.5px;
 }
 
 .btn-primary {
@@ -102,27 +135,23 @@ img {
   font-family: var(--fonte-corpo);
   font-weight: 600;
   font-size: 1.6rem;
-  color: var(--cor-creme-claro); /* PERGUNTA: A cor do texto do botão será esta? */
-  background-color: var(--cor-verde-oliva); /* PERGUNTA: A cor de fundo do botão será esta? */
+  color: var(--cor-creme-claro);
+  background-color: var(--cor-verde-escuro); /* Cor final do botão */
   padding: 1.5rem 3rem;
   border-radius: 5px;
   text-transform: uppercase;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-primary:hover {
-  background-color: var(--cor-verde-escuro);
+  background-color: var(--cor-verde-oliva); /* Cor ao passar o mouse */
+  transform: translateY(-3px); /* Leve efeito de elevação */
 }
 
 @media (max-width: 768px) {
-  
-  /* AJUSTES NA SEÇÃO HERO PARA MOBILE */
   .hero {
-    /* 1. TROCA a imagem de fundo pela versão mobile */
-    background-image: url('/assets/img/MOBILE_HEADER_IMG.png');
+    background-image: url('img/MOBILE_HEADER_IMG.png');
     background-position: center center; /* Centraliza a nova imagem vertical */
-    
-    /* 2. Ajusta a grade para o layout vertical da nova imagem */
     grid-template-columns: 1fr; /* Garante uma única coluna */
     grid-template-rows: 55% 45%; /* Cria duas linhas para alinhar o conteúdo na parte laranja (55%) */
     align-items: start; /* Alinha o conteúdo no topo da célula da grade */
@@ -130,11 +159,8 @@ img {
   }
 
   .hero-content {
-    /* 3. Posiciona o conteúdo na primeira linha (a área laranja da imagem) */
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-
-    /* 4. Ajusta os espaçamentos para a nova imagem de fundo */
     padding: 6rem 2rem 2rem 2rem; /* Mais espaço no topo para centralizar na área laranja */
     text-align: center;
   }
