@@ -277,17 +277,16 @@ img {
   /* 1. MUDANÇA PRINCIPAL: O GRADIENTE */
   background-image: linear-gradient(to right, var(--cor-verde-oliva), var(--cor-laranja-terracota));
   
-  /* 2. AJUSTE NECESSÁRIO: Cor do texto para garantir a leitura */
-  color: var(--cor-creme-claro);
+  color: var(--cor-ver-oliva-claro);
   
   font-family: var(--fonte-corpo);
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: 600;
   text-transform: uppercase;
   align-items: right;
 
   padding: 0.5rem 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   border-radius: 15px;
 }
 
