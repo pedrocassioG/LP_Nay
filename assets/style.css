@@ -143,7 +143,7 @@ img {
   display: inline-block;
   font-family: var(--fonte-corpo);
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: var(--fs-h2);
   color: var(--cor-creme-claro);
   background-color: var(--cor-verde-escuro); /* Cor final do botão */
   padding: 1.5rem 3rem;
@@ -153,33 +153,68 @@ img {
 }
 
 .btn-primary:hover {
-  background-color: var(--cor-verde-oliva); /* Cor ao passar o mouse */
-  transform: translateY(-3px); /* Leve efeito de elevação */
+  /* 1. Invertemos as cores */
+  background-color: var(--cor-creme-claro);
+  color: var(--cor-verde-escuro);
+
+  /* 2. Mantemos o efeito de elevação */
+  transform: translateY(-3px);
 }
 
+
+
+/* ======================================================= */
+/* 6. RESPONSIVIDADE (MEDIA QUERIES)                       */
+/* ======================================================= */
+
 @media (max-width: 768px) {
+  
+  /* AJUSTES NA SEÇÃO HERO PARA MOBILE */
   .hero {
+    /* Troca a imagem de fundo pela versão mobile */
     background-image: url('img/MOBILE_HEADER_IMG.png');
-    background-position: center center; /* Centraliza a nova imagem vertical */
-    grid-template-columns: 1fr; /* Garante uma única coluna */
-    grid-template-rows: 55% 45%; /* Cria duas linhas para alinhar o conteúdo na parte laranja (55%) */
-    align-items: start; /* Alinha o conteúdo no topo da célula da grade */
+    background-position: center center;
+    
+    /* Ajusta a grade para o layout vertical */
+    grid-template-columns: 1fr;
+    grid-template-rows: 55% 45%;
+    align-items: start;
     min-height: 100vh;
   }
 
   .hero-content {
+    /* Posiciona o conteúdo na primeira linha (área laranja) */
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    padding: 6rem 2rem 2rem 2rem; /* Mais espaço no topo para centralizar na área laranja */
+
+    /* Ajusta os espaçamentos para telas menores */
+    padding: 6rem 2.5rem 2rem 2.5rem; /* Aumentei um pouco o padding lateral */
     text-align: center;
   }
 
+  /* --- AJUSTES DE FONTE E ELEMENTOS ESPECÍFICOS --- */
+
   .hero-content h1 {
-    font-size: 4.2rem;
+    font-size: 2.8rem; /* Tamanho do título para mobile */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.4rem; /* Subtítulo menor e mais delicado */
+    padding: 0.8rem 1.5rem; /* Padding um pouco menor */
   }
 
-  .hero-content p {
-    font-size: 1.6rem;
-    margin-bottom: 4rem;
+  .hero-text {
+    font-size: 1.4rem; /* Tamanho do texto de apoio */
+    line-height: 1.5;
+    max-width: 100%; /* Remove a limitação de largura no mobile */
+  }
+
+  .hero-label {
+    font-size: 1.4rem; /* Tamanho do label ajustado */
+  }
+
+  .btn-primary {
+    font-size: 1.4rem; /* Tamanho do botão drasticamente reduzido para caber */
+    padding: 1.2rem 2.4rem; /* Padding do botão também menor */
   }
 }
