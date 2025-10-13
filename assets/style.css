@@ -226,6 +226,72 @@ img {
 }
 
 /* ======================================================= */
+/* CONSULTORIA SECTION                                     */
+/* ======================================================= */
+.consultoria-section {
+  background-image: url('img/WEB_SECTION_3_IMG.png');
+  background-position: center top;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: 930fr 990fr; 
+}
+
+/* A coluna da direita se tornará uma nova grade (aninhada) */
+.consultoria-right {
+  display: grid;
+  /* 2. Criamos 2 linhas: um espaço vazio de 600px e o resto para o conteúdo */
+  grid-template-rows: 600px auto;
+  align-items: start; /* Alinha o conteúdo no topo da sua área */
+}
+
+.consultoria-content {
+  /* 3. Posicionamos o conteúdo na segunda linha da coluna da direita */
+  grid-row: 2 / 3;
+  padding-left: 80px;
+  padding-right: 60px;
+  /* Estilos do texto (cores e alinhamento) */
+  color: var(--cor-creme-claro);
+  text-align: right; /* Alinhamento do texto à esquerda, como no design */
+}
+
+.consultoria-content p {
+  font-size: 3rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  max-width: 65ch; /* Limita a largura do parágrafo */
+}
+
+.consultoria-content p:last-child {
+  margin-bottom: 0; /* Remove a margem do último parágrafo */
+}
+
+.consultoria-content strong {
+  font-weight: 800; /* Deixa o negrito um pouco mais forte */
+}
+
+.consultoria-content h3 {
+    
+  display: inline-block;
+  
+  /* 1. MUDANÇA PRINCIPAL: O GRADIENTE */
+  background-image: linear-gradient(to right, var(--cor-verde-oliva), var(--cor-laranja-terracota));
+  
+  /* 2. AJUSTE NECESSÁRIO: Cor do texto para garantir a leitura */
+  color: var(--cor-creme-claro);
+  
+  font-family: var(--fonte-corpo);
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-items: right;
+
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+}
+
+/* ======================================================= */
 /* 6. RESPONSIVIDADE (MEDIA QUERIES)                       */
 /* ======================================================= */
 
