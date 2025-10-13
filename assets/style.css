@@ -307,17 +307,22 @@ img {
 
 .pitch-section h2 {
   font-size: 4rem; /* Título menor para caber na tela */
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 .checklist {
-  align-items: center; /* Centraliza os itens da lista no mobile */
+  display: inline-flex; /* Chave para o bloco se ajustar ao conteúdo */
+  flex-direction: column; /* Mantém os itens empilhados */
+  align-items: flex-start;
+  margin-bottom: 3rem;
 }
 
 .check-item {
-  justify-content: center; /* Centraliza o texto + ícone */
-  gap: 4rem; /* Reduz o espaçamento entre check e texto */
+  justify-content: flex-start; /* Chave para alinhar os itens no início */
+  flex-direction: row-reverse; /* Mantém o check antes do texto no mobile */
+  gap: 1.5rem;
   font-size: 1.6rem;
+  font-weight: 600; /* Adicionei para manter o peso da fonte do desktop */
 }
 
 .final-text {
