@@ -7,7 +7,7 @@
 }
 
 :root {
-  --cor-verde-escuro: #283618;
+  --cor-verde-escuro: #a6da84;
   --cor-verde-oliva: #606C38;
   --cor-laranja-terracota: #BC6C25;
   --cor-bege-dourado: #DDA15E;
@@ -105,8 +105,8 @@ img {
   display: inline-block; /* Permite fundo, padding e se ajusta ao conteúdo */
   
   /* Novas cores, como você pediu */
-  background-color: var(--cor-creme-claro);
-  color: var(--cor-verde-escuro);
+  background-color: var(--cor-verde-oliva);
+  color: var(--cor-creme-claro);
   
   /* Estilo de "botão" */
   padding: 1rem 2rem; /* Espaçamento interno para criar o corpo do "botão" */
@@ -145,7 +145,7 @@ img {
   font-weight: 600;
   font-size: var(--fs-h2);
   color: var(--cor-creme-claro);
-  background-color: var(--cor-verde-escuro); /* Cor final do botão */
+  background-color: var(--cor-verde-oliva); /* Cor final do botão */
   padding: 1.5rem 3rem;
   border-radius: 5px;
   text-transform: uppercase;
@@ -202,7 +202,7 @@ img {
 }
 
 .pitch-section h2 .highlight-orange {
-  color: var(--cor-bege-dourado); /* Cor laranja para o trecho destacado */
+  color: var(--cor-creme-claro); /* Cor laranja para o trecho destacado */
 }
 
 .check-item {
