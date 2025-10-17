@@ -7,8 +7,8 @@
 }
 
 :root {
-  --cor-verde-escuro: #a6da84;
-  --cor-verde-oliva: #606C38;
+  --cor-verde-claro: #a6da84;
+  --cor-verde-escuro: #606C38;
   --cor-laranja-terracota: #BC6C25;
   --cor-bege-dourado: #DDA15E;
   --cor-creme-claro: #FEFAE0;
@@ -91,7 +91,7 @@ img {
 
 .hero-content h1 {
   font-size: 12rem; /* Usando a variável que você definiu */
-  color: var(--cor-verde-escuro); /* Cor principal do H1 */
+  color: var(--cor-verde-claro); /* Cor principal do H1 */
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -105,7 +105,7 @@ img {
   display: inline-block; /* Permite fundo, padding e se ajusta ao conteúdo */
   
   /* Novas cores, como você pediu */
-  background-color: var(--cor-verde-oliva);
+  background-color: var(--cor-verde-escuro);
   color: var(--cor-creme-claro);
   
   /* Estilo de "botão" */
@@ -133,7 +133,7 @@ img {
   font-family: var(--fonte-corpo);
   font-size: var(--fs-h3);
   font-weight: 600;
-  color: var(--cor-verde-escuro);
+  color: var(--cor-verde-claro);
   text-transform: uppercase;
   margin-bottom: 3rem;
   letter-spacing: 0.5px;
@@ -145,7 +145,7 @@ img {
   font-weight: 600;
   font-size: var(--fs-h2);
   color: var(--cor-creme-claro);
-  background-color: var(--cor-verde-oliva); /* Cor final do botão */
+  background-color: var(--cor-verde-escuro); /* Cor final do botão */
   padding: 1.5rem 3rem;
   border-radius: 5px;
   text-transform: uppercase;
@@ -155,7 +155,7 @@ img {
 .btn-primary:hover {
   /* 1. Invertemos as cores */
   background-color: var(--cor-creme-claro);
-  color: var(--cor-verde-escuro);
+  color: var(--cor-verde-claro);
 
   /* 2. Mantemos o efeito de elevação */
   transform: translateY(-3px);
@@ -166,7 +166,7 @@ img {
 /* ======================================================= */
 .pitch-section {
   background-image: url('img/WEB_SESSÃO_2_IMG.png');
-  background-color: var(--cor-verde-escuro); /* Cor de fundo para garantir contraste */
+  background-color: var(--cor-verde-claro); /* Cor de fundo para garantir contraste */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -275,7 +275,7 @@ img {
   display: inline-block;
   
   /* 1. MUDANÇA PRINCIPAL: O GRADIENTE */
-  background-image: linear-gradient(to right, var(--cor-verde-oliva), var(--cor-laranja-terracota));
+  background-image: linear-gradient(to right, var(--cor-verde-escuro), var(--cor-laranja-terracota));
   
   color: var(--cor-ver-oliva-claro);
   
