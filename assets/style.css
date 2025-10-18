@@ -155,7 +155,7 @@ img {
 .btn-primary:hover {
   /* 1. Invertemos as cores */
   background-color: var(--cor-creme-claro);
-  color: var(--cor-verde-claro);
+  color: var(--cor-verde-escuro);
 
   /* 2. Mantemos o efeito de elevação */
   transform: translateY(-3px);
