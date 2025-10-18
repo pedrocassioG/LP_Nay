@@ -322,7 +322,7 @@ img {
   /* --- AJUSTES DE FONTE E ELEMENTOS ESPECÍFICOS --- */
 
   .hero-content h1 {
-    font-size: 4rem; /* Tamanho do título para mobile */
+    font-size: 6rem; /* Tamanho do título para mobile */
   }
   
   .hero-subtitle {
@@ -331,13 +331,13 @@ img {
   }
 
   .hero-text {
-    font-size: 1.4rem; /* Tamanho do texto de apoio */
+    font-size: 1.5rem; /* Tamanho do texto de apoio */
     line-height: 1.5;
     max-width: 100%; /* Remove a limitação de largura no mobile */
   }
 
   .hero-label {
-    font-size: 1.4rem; /* Tamanho do label ajustado */
+    font-size: 1.2rem; /* Tamanho do label ajustado */
   }
 
   .btn-primary {
@@ -395,7 +395,7 @@ img {
 }
 .consultoria-section {
   /* 1. TROCA a imagem de fundo pela versão mobile */
-  background-image: url('img/MOBILE_SECTION_teste3_IMG.png');
+  background-image: url('img/MOBILE_SECTION_3_IMG.png');
   background-position: center top; /* Foca no topo da imagem */
   background-size: cover;
 
@@ -429,7 +429,7 @@ img {
 
 /* Reduzimos drasticamente as fontes do desktop */
 .consultoria-content p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 2.5rem;
 }
 
