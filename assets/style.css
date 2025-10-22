@@ -390,6 +390,19 @@ img {
   background-color: var(--cor-azul-claro); /* << COR ATUALIZADA */
   padding: 2.5rem;
   border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+.etapas-grid:hover > .etapa-card {
+  transform: scale(0.95); /* Diminui para 95% do tamanho */
+  opacity: 0.7; /* Fica levemente transparente */
+}
+
+/* 2. O card específico que está com o mouse ignora a regra anterior */
+.etapas-grid:hover > .etapa-card:hover {
+  transform: scale(1.05); /* Cresce para 105% (um pouco maior) */
+  opacity: 1; /* Fica 100% opaco */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra mais forte para destacar */
 }
 
 .etapa-numero {
