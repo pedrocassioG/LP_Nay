@@ -14,6 +14,7 @@
   --cor-creme-claro: #FEFAE0;
   --cor-ver-oliva-claro: #cce289;
   --cor-azul: #1050d4;
+  --cor-azul-claro: #4c86fc;
   --fonte-h1: 'Monolito', sans-serif;
   --fonte-corpo: 'Manrope', sans-serif;
   
@@ -508,5 +509,51 @@ img {
 .consultoria-content h3 {
   font-size: 3.2rem;
   margin-bottom: 2.5rem;
+}
+.como-funciona-section {
+  background-image: url('img/MOBILE_SECTION_4.png');
+  background-position: center bottom; /* Mantém as planilhas embaixo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  
+  /* --- MUDANÇA PRINCIPAL PARA CORRIGIR O LAYOUT --- */
+  display: flex; /* Muda de Grid para Flexbox */
+  flex-direction: column; /* Empilha os itens verticalmente */
+  justify-content: flex-start; /* Alinha o conteúdo NO TOPO */
+  
+  /* Remove o padding antigo do grid */
+  padding: 0;
+}
+
+/* SUBSTITUA A REGRA .como-funciona-content */
+.como-funciona-content {
+  grid-column: auto; /* Reseta a regra de grid */
+  padding: 5rem 2.5rem; /* Adiciona o padding aqui (5rem no topo, 2.5rem nas laterais) */
+  text-align: center;
+  width: 100%; /* Garante que ocupe a largura */
+}
+
+.como-funciona-content h2 {
+  font-size: 5rem; /* Tamanho ajustado para mobile */
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  padding: 0.8rem 1.5rem; /* Padding menor para o fundo do título */
+  border-radius: 8px; /* Borda arredondada menor */
+  
+  /* Gradiente e cor do texto se mantêm, mas o alinhamento é central */
+  text-align: center; /* << Centraliza o título */
+  display: inline-block; /* Mantém o fundo ajustado ao texto */
+}
+
+.como-funciona-content .subtitulo {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.como-funciona-content p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  max-width: none; /* Remove a limitação de largura */
 }
 }
