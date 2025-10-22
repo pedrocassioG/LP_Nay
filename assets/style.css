@@ -646,4 +646,42 @@ img {
   margin-bottom: 2rem;
   max-width: none; /* Remove a limitação de largura */
 }
+
+
+.etapas-titulo-principal {
+  font-size: 5rem; /* Reduz drasticamente o título de 10rem */
+  line-height: 1.2;
+}
+
+
+
+.etapas-grid {
+  /* 1. MUDA A GRADE para uma única coluna */
+  grid-template-columns: 1fr;
+  gap: 2.5rem; /* Um bom espaçamento entre os cards empilhados */
+  padding-left: 7rem;  /* Adiciona o espaçamento à esquerda */
+  padding-right: 7rem;
+}
+
+.etapas-subtitulo {
+  font-size: 2rem;
+}
+
+.contato-box p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* 2. DESABILITA O EFEITO DE FOCO/HOVER NO MOBILE */
+/* Isso previne bugs em telas de toque */
+.etapas-grid:hover > .etapa-card {
+  transform: none;
+  opacity: 1;
+}
+
+.etapas-grid:hover > .etapa-card:hover {
+  transform: none;
+  opacity: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Mantém a sombra padrão */
+}
 }
