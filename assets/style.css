@@ -803,4 +803,86 @@ img {
   opacity: 1;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Mantém a sombra padrão */
 }
+
+/* Dentro da sua @media (max-width: 768px) { ... } */
+
+/* --- AJUSTES NA DEPOIMENTOS SECTION PARA MOBILE --- */
+.depoimentos-section {
+  /* 1. MUDA para coluna única */
+  grid-template-columns: 1fr;
+  padding: 13rem 2.5rem 5rem;
+  gap: 10rem;
+  background-image: url('img/MOBILE_SECTION_6.png'); /* << NOME DA IMAGEM ATUALIZADO */
+  background-position: center top;
+  background-size: cover;
+}
+
+/* 3. REORDENAÇÃO dos elementos da coluna da esquerda */
+.depoimentos-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza tudo */
+  text-align: center;
+}
+
+.depoimentos-content h2 {
+  order: 1; /* Título vem primeiro */
+  font-size: 5rem; /* Ajuste de fonte */
+  line-height: 1.1;
+  color: var(--cor-azul); /* Mantém a cor do texto */
+}
+
+.depoimentos-content h2 .highlight-white {
+   color: var(--cor-creme-claro); /* Mantém destaque */
+}
+
+.depoimentos-content .texto-principal {
+  order: 2; /* Texto principal em segundo */
+  font-size: 1.7rem;
+  color: var(--cor-azul);
+}
+
+.depoimentos-content .texto-secundario {
+  order: 3; /* Texto secundário em terceiro */
+  font-size: 1.8rem;
+  color: var(--cor-creme-claro); /* Cor creme, como no design mobile */
+  margin-bottom: 3rem; /* Espaço antes do label */
+}
+
+.label-depoimento {
+  order: 4; /* Label vem por último no bloco */
+  font-size: 1.6rem;
+  color: var(--cor-azul); /* Cor do label no mobile */
+  padding-left: 0; /* Remove o espaço da barra */
+  margin-bottom: 3rem; /* Espaço antes dos cards */
+  position: relative;
+}
+
+/* Esconde a barra azul vertical no mobile */
+.label-depoimento::before {
+  display: none;
+}
+.label-depoimento::after {
+  content: ''; /* Obrigatório */
+  position: absolute;
+  left: 50%; /* Centraliza a barra */
+  bottom: -1.5rem; /* Posiciona a barra 1.5rem abaixo do texto */
+  transform: translateX(-50%); /* Garante a centralização perfeita */
+
+  width: 100px; /* Largura da barra (ajuste se necessário) */
+  height: 3px; /* Altura/espessura da barra */
+  background-color: var(--cor-azul);
+  border-radius: 2px;
+}
+
+/* 4. AJUSTES nos cards da coluna da direita */
+.card-depoimento {
+  min-height: auto; /* Remove a altura mínima do desktop */
+}
+
+.disclaimer {
+  text-align: center;
+  padding: 1rem 0 0 0;
+  color: var(--cor-creme-claro); /* Cor creme para o disclaimer */
+}
 }
