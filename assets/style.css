@@ -465,7 +465,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
   align-items: center;
-  gap: 4rem;
+  gap: 20rem;
   padding: 8rem 5%; /* Padding lateral de 5% */
 }
 
@@ -499,10 +499,9 @@ img {
 
 .depoimentos-content h2 {
   font-family: var(--fonte-h1);
-  font-size: 10rem;
-  font-weight: 300;
+  font-size: 14rem;
+  font-weight: 200;
   text-transform: uppercase;
-  line-height: 1.1;
   margin-bottom: 3rem;
 }
 
@@ -512,7 +511,7 @@ img {
 }
 
 .depoimentos-content .texto-principal {
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 2rem;
@@ -520,10 +519,11 @@ img {
 }
 
 .depoimentos-content .texto-secundario {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
+  color: var(--cor-creme-claro);
 }
 
 /* Coluna da Direita */
@@ -577,7 +577,7 @@ img {
 .disclaimer {
   font-size: 1.4rem;
   font-style: italic;
-  color: var(--cor-azul); /* Assumindo a mesma cor de texto da esquerda */
+  color: var(--cor-creme-claro); /* Assumindo a mesma cor de texto da esquerda */
   text-align: right;
   padding-right: 1.5rem;
 }
