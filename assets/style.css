@@ -532,6 +532,118 @@ img {
   padding-right: 1.5rem;
 }
 
+/* ======================================================= */
+/* SOBRE NAY SECTION                                       */
+/* ======================================================= */
+.sobre-section {
+  background-image: url('img/WEB_SECTION_7.png');
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 8rem 0;
+}
+
+.sobre-content {
+  grid-column: 2 / 3;
+  padding-right: 15%;
+  color: var(--cor-azul); /* Cor do texto (Confirmado) */
+}
+
+.sobre-content p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 60ch;
+}
+
+/* --- EFEITO DO TÍTULO "SOU NAY" ADAPTADO --- */
+.titulo-nay-card {
+  position: relative;
+  /* Ajustei o tamanho para o texto "SOU NAY," */
+  width: 350px; 
+  height: 150px;
+  border-radius: 14px;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  /* Sombra sutil que funciona em fundo branco */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-nay-card .bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 340px;
+  height: 140px;
+  z-index: 2;
+  /* Fundo creme-claro, como nossa identidade */
+  background: var(--cor-creme-claro);
+  border-radius: 10px;
+  overflow: hidden;
+  /* Borda verde-claro, como no design original */
+  outline: 2px solid var(--cor-verde-claro);
+}
+
+.titulo-nay-card .blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--cor-azul);
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+.titulo-nay-text {
+  position: relative;
+  z-index: 3; /* Para ficar em cima do .bg */
+  font-family: var(--fonte-h1);
+  font-size: 8rem;
+  color: var(--cor-azul);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/* --- FIM DO EFEITO DO TÍTULO --- */
+
+
+.lista-ajuda {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.item-ajuda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Cores dos botões (Confirmado) */
+  background-color: var(--cor-azul);
+  color: var(--cor-creme-claro);
+  
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.item-ajuda img {
+  width: 40px;
+  height: 40px;
+}
 
 
 @media (max-width: 768px) {
@@ -817,4 +929,26 @@ img {
   padding: 1rem 0 0 0;
   color: var(--cor-creme-claro); 
 }
+}
+
+@keyframes blob-bounce {
+ 0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
 }
