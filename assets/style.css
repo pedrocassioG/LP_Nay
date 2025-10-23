@@ -1188,26 +1188,70 @@ img {
   font-size: 1.4rem;
   padding: 0 1.5rem;
 }
+/* Dentro da sua @media (max-width: 768px) { ... } */
+
+/* --- AJUSTES NA CTA FINAL SECTION PARA MOBILE (VERSÃO COM POSITION ABSOLUTE) --- */
+.cta-section {
+  background-image: url('img/MOBILE_SECTION_8.png');
+  background-position: center top;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 0; /* Remove padding para controle absoluto */
+  
+  /* Necessário para posicionar o conteúdo de baixo */
+  position: relative; 
 }
 
-@keyframes blob-bounce {
- 0% {
-    transform: translate(-100%, -100%) translate3d(0, 0, 0);
-  }
+/* O container agora só serve para padding lateral */
+.cta-section .container {
+  padding: 0 2.5rem; 
+  min-height: 100vh;
+  
+  /* Resetamos o flex que não é mais necessário para este método */
+  display: block; 
+  position: static; /* Garante que não interfira no position absolute */
+}
 
-  25% {
-    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
-  }
+/* Título continua posicionado normalmente no topo */
+.cta-titulo {
+  font-size: 5rem;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 5rem; /* Espaço do topo */
+}
 
-  50% {
-    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
-  }
+/* O conteúdo de baixo agora é posicionado absolutamente */
+.cta-content-bottom {
+  position: absolute;
+  bottom: 4rem; /* << Distância da borda inferior (ajuste aqui!) */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Estilos que já tínhamos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 90%; /* Limita a largura para centralizar */
+  
+  /* Removemos o margin-top */
+}
 
-  75% {
-    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-  }
+.cta-subtitulo {
+  font-size: 2.4rem;
+  text-align: center;
+}
 
-  100% {
-    transform: translate(-100%, -100%) translate3d(0, 0, 0);
-  }
+/* Ajustes no botão animado (continuam os mesmos) */
+.animated-button {
+  padding: 1.4rem 2.5rem;
+  font-size: 1.4rem;
+  width: 100%; /* Ocupa a largura do .cta-content-bottom */
+  max-width: 350px;
+}
+
+.animated-button:hover .circle {
+  width: 400px;
+  height: 400px;
+}
 }
