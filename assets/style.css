@@ -68,12 +68,7 @@ img {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-/* HERO SECTION */
-/* ======================================================= */
-/* 5. ESTILOS DAS SEÇÕES                                   */
-/* ======================================================= */
 
-/* HERO SECTION - VERSÃO FINAL */
 .hero {
   background-image: url('img/WEB_HEADER_IMG.png');
   background-position: center center;
@@ -92,34 +87,26 @@ img {
 }
 
 .hero-content h1 {
-  font-size: 12rem; /* Usando a variável que você definiu */
-  color: var(--cor-verde-claro); /* Cor principal do H1 */
+  font-size: 12rem;
+  color: var(--cor-verde-claro);
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 .hero-content h1 span {
-  color: var(--cor-creme-claro); /* Cor especial apenas para o span */
-  text-shadow: 1px 1px 3px rgba(40, 54, 24, 0.4); /* Efeito de sombra para dar profundidade */
+  color: var(--cor-creme-claro);
+  text-shadow: 1px 1px 3px rgba(40, 54, 24, 0.4);
 }
 
 .hero-subtitle {
-  display: inline-block; /* Permite fundo, padding e se ajusta ao conteúdo */
-  
-  /* Novas cores, como você pediu */
+  display: inline-block;
   background-color: var(--cor-verde-escuro);
   color: var(--cor-creme-claro);
-  
-  /* Estilo de "botão" */
-  padding: 1rem 2rem; /* Espaçamento interno para criar o corpo do "botão" */
-  border-radius: 5px; /* Bordas levemente arredondadas */
-  
-  /* Estilos de fonte que já tínhamos */
+  padding: 1rem 2rem; 
+  border-radius: 5px; 
   font-family: var(--fonte-corpo);
   font-size: 2.2rem;
   font-weight: 600;
-  
-  /* Ajuste de posicionamento */
   margin-bottom: 2.5rem;
 }
 
@@ -128,7 +115,7 @@ img {
   line-height: 1.6;
   color: var(--cor-creme-claro);
   margin-bottom: 2.5rem;
-  max-width: 50ch; /* Limita a largura do parágrafo para melhor leitura */
+  max-width: 50ch;
 }
 
 .hero-label {
@@ -147,7 +134,7 @@ img {
   font-weight: 600;
   font-size: var(--fs-h2);
   color: var(--cor-creme-claro);
-  background-color: var(--cor-verde-escuro); /* Cor final do botão */
+  background-color: var(--cor-verde-escuro);
   padding: 1.5rem 3rem;
   border-radius: 5px;
   text-transform: uppercase;
@@ -155,42 +142,35 @@ img {
 }
 
 .btn-primary:hover {
-  /* 1. Invertemos as cores */
   background-color: var(--cor-creme-claro);
   color: var(--cor-verde-escuro);
-
-  /* 2. Mantemos o efeito de elevação */
   transform: translateY(-3px);
 }
 
-/* ======================================================= */
-/* PITCH SECTION                                           */
-/* ======================================================= */
 .pitch-section {
   background-image: url('img/WEB_SESSÃO_2_IMG.png');
-  background-color: var(--cor-verde-claro); /* Cor de fundo para garantir contraste */
+  background-color: var(--cor-verde-claro);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-
   display: grid;
-  grid-template-columns: 40% 60%; /* Divide a seção, dando mais espaço à direita */
+  grid-template-columns: 40% 60%;
   align-items: center;
-  padding: 8rem 0; /* Espaçamento vertical */
-  color: var(--cor-creme-claro); /* Cor padrão do texto para esta seção */
+  padding: 8rem 0;
+  color: var(--cor-creme-claro);
 }
 
 .content-right {
   grid-column: 2 / 3;
   padding-left: 10%;
   padding-right: 5%;
-  text-align: right; /* << 1. ALINHA TODOS OS TEXTOS À DIREITA */
+  text-align: right;
 }
 
 .checklist {
-  display: flex; /* Adicionado para controlar o alinhamento dos itens */
-  flex-direction: column; /* Para empilhar os itens verticalmente */
-  align-items: flex-end; /* << 2. ALINHA OS ITENS DA LISTA À DIREITA */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   margin-bottom: 3rem;
 }
 
@@ -204,121 +184,102 @@ img {
 }
 
 .pitch-section h2 .highlight-orange {
-  color: var(--cor-creme-claro); /* Cor laranja para o trecho destacado */
+  color: var(--cor-creme-claro);
 }
 
 .check-item {
   display: flex;
   align-items: center;
-  gap: 3rem; /* Espaço entre o ícone e o texto */
+  gap: 3rem;
   margin-bottom: 1.5rem;
   font-size: 4rem;
   font-weight: 600;
 }
 
 .check-item img {
-  width: 24px; /* Tamanho fixo para os seus ícones */
+  width: 24px; 
   height: 24px;
 }
 
 .final-text {
   font-size: 3rem;
-  font-style: italic; /* Texto em itálico como no design */
+  font-style: italic;
   line-height: 1.6;
 }
 
-/* ======================================================= */
-/* CONSULTORIA SECTION                                     */
-/* ======================================================= */
 .consultoria-section {
   background-image: url('img/WEB_SECTION_3_IMG.png');
   background-position: center top;
   background-size: cover;
-
   display: grid;
   grid-template-columns: 930fr 990fr; 
 }
 
-/* A coluna da direita se tornará uma nova grade (aninhada) */
+
 .consultoria-right {
   display: grid;
-  /* 2. Criamos 2 linhas: um espaço vazio de 600px e o resto para o conteúdo */
   grid-template-rows: 600px auto;
-  align-items: start; /* Alinha o conteúdo no topo da sua área */
+  align-items: start;
 }
 
 .consultoria-content {
-  /* 3. Posicionamos o conteúdo na segunda linha da coluna da direita */
   grid-row: 2 / 3;
   padding-left: 80px;
   padding-right: 60px;
-  /* Estilos do texto (cores e alinhamento) */
   color: var(--cor-creme-claro);
-  text-align: right; /* Alinhamento do texto à esquerda, como no design */
+  text-align: right;
 }
 
 .consultoria-content p {
   font-size: 3rem;
   line-height: 1.7;
   margin-bottom: 3rem;
-  max-width: 65ch; /* Limita a largura do parágrafo */
+  max-width: 65ch;
 }
 
 .consultoria-content p:last-child {
-  margin-bottom: 0; /* Remove a margem do último parágrafo */
+  margin-bottom: 0;
 }
 
 .consultoria-content strong {
-  font-weight: 800; /* Deixa o negrito um pouco mais forte */
+  font-weight: 800;
 }
 
 .consultoria-content h3 {
     
   display: inline-block;
-  
-  /* 1. MUDANÇA PRINCIPAL: O GRADIENTE */
-  background-image: linear-gradient(to right, var(--cor-verde-escuro), var(--cor-laranja-terracota));
-  
+  background-image: linear-gradient(to right, var(--cor-verde-escuro), var(--cor-laranja-terracota)); 
   color: var(--cor-ver-oliva-claro);
-  
   font-family: var(--fonte-corpo);
   font-size: 8rem;
   font-weight: 600;
   text-transform: uppercase;
   align-items: right;
-
   padding: 0.5rem 1.5rem;
   margin-bottom: 3rem;
   border-radius: 15px;
 }
 
-/* ======================================================= */
-/* COMO FUNCIONA SECTION                                   */
-/* ======================================================= */
 .como-funciona-section {
   background-image: url('img/WEB_SECTION_4.png');
-  background-color: var(--cor-azul); /* Cor de fundo de fallback (azul) */
-  background-position: left center; /* Alinha a imagem à esquerda para proteger a arte */
+  background-color: var(--cor-azul);
+  background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
-
   display: grid;
-  grid-template-columns: 55% 45%; /* Divisão: 55% para a arte, 45% para o texto */
+  grid-template-columns: 55% 45%; 
   align-items: center;
   padding: 8rem 0;
 }
 
 .como-funciona-content {
-  grid-column: 2 / 3; /* Posiciona o conteúdo na segunda coluna */
-  padding-right: 15%; /* Espaço generoso na direita */
-  padding-left: 2rem; /* Pequeno respiro da linha central */
+  grid-column: 2 / 3; 
+  padding-right: 15%; 
+  padding-left: 2rem; 
   color: var(--cor-creme-claro);
 }
 
-/* SUBSTITUA a sua regra .como-funciona-content h2 por esta */
-
 .como-funciona-content h2 {
-  /* Estilos de fonte e layout que já tínhamos */
   font-family: var(--fonte-h1);
   font-size: 12rem;
   font-weight: 300;
@@ -332,7 +293,6 @@ img {
     var(--cor-azul), 
     var(--cor-verde-escuro)
   );
-
   display: inline-block;  
   padding: 1rem 2rem;    
   border-radius: 10px; 
@@ -381,28 +341,28 @@ img {
 
 .etapas-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cria as 4 colunas */
+  grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   margin-bottom: 5rem;
 }
 
 .etapa-card {
-  background-color: var(--cor-azul-claro); /* << COR ATUALIZADA */
+  background-color: var(--cor-azul-claro);
   padding: 2.5rem;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 }
+
 .etapas-grid:hover > .etapa-card {
-  transform: scale(0.95); /* Diminui para 95% do tamanho */
-  opacity: 0.7; /* Fica levemente transparente */
+  transform: scale(0.95);
+  opacity: 0.7;
 }
 
-/* 2. O card específico que está com o mouse ignora a regra anterior */
 .etapas-grid:hover > .etapa-card:hover {
-  transform: scale(1.05); /* Cresce para 105% (um pouco maior) */
-  opacity: 1; /* Fica 100% opaco */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra mais forte para destacar */
+  transform: scale(1.05);
+  opacity: 1;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .etapa-numero {
@@ -435,7 +395,7 @@ img {
 
 .contato-box {
   background-color: var(--cor-creme-claro);
-  color: var(--cor-azul); /* << COR ATUALIZADA */
+  color: var(--cor-azul); 
   border-radius: 15px;
   padding: 3rem;
   max-width: 800px;
@@ -453,25 +413,21 @@ img {
   font-weight: 800;
 }
 
-/* ======================================================= */
-/* DEPOIMENTOS SECTION                                     */
-/* ======================================================= */
 .depoimentos-section {
-  background-image: url('img/WEB._SECTION_6.png'); /* << ADICIONE O NOME DA SUA IMAGEM DE FUNDO AQUI */
+  background-image: url('img/WEB._SECTION_6.png');
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 20rem;
-  padding: 8rem 5%; /* Padding lateral de 5% */
+  padding: 8rem 5%;
 }
 
-/* Coluna da Esquerda */
 .depoimentos-content {
-  color: var(--cor-azul); /* Cor do texto da esquerda (Confirmado) */
+  color: var(--cor-azul); 
 }
 
 .label-depoimento {
@@ -479,21 +435,20 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  color: var(--cor-creme-claro); /* 1. Cor do texto alterada */
-  position: relative;            /* 2. Essencial para a barra funcionar */
-  padding-left: 1.5rem;          /* 3. Cria espaço para a barra */
+  color: var(--cor-creme-claro); 
+  position: relative;            
+  padding-left: 1.5rem;         
 }
 
 .label-depoimento::before {
-  content: ''; /* Obrigatório para pseudo-elementos */
+  content: '';
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%); /* Centraliza a barra verticalmente */
-
-  width: 4px; /* Largura da barra */
-  height: 5rem; /* Altura da barra (um pouco maior que a fonte) */
-  background-color: var(--cor-azul); /* Cor da barra */
+  transform: translateY(-50%); 
+  width: 4px;
+  height: 5rem; 
+  background-color: var(--cor-azul);
   border-radius: 2px;
 }
 
@@ -506,7 +461,7 @@ img {
 }
 
 .depoimentos-content h2 .highlight-white {
-  color: var(--cor-creme-claro); /* Cor do destaque (Confirmado) */
+  color: var(--cor-creme-claro);
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -526,40 +481,38 @@ img {
   color: var(--cor-creme-claro);
 }
 
-/* Coluna da Direita */
 .depoimentos-cards {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem; /* Espaço entre os cards */
+  gap: 2.5rem;
 }
 
 .card-depoimento {
-  display: flex; /* A CHAVE: cria o layout de 2 colunas */
-  align-items: stretch; /* Força as duas colunas a terem a mesma altura */
+  display: flex;
+  align-items: stretch; 
   
   background-color: #FFFFFF;
   color: var(--cor-azul);
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   
-  overflow: hidden; /* MUITO IMPORTANTE: para o border-radius cortar a imagem */
+  overflow: hidden; 
   min-height: 200px;
 }
 .card-imagem {
-  flex: 0 0 150px; /* Define uma largura fixa de 150px para a imagem */
-  /* 'flex: 0 0 150px' = não cresce, não encolhe, largura de 150px */
+  flex: 0 0 150px; 
 }
 
 .card-imagem img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garante que a imagem preencha o espaço (o "quadrado") */
+  object-fit: cover; 
   padding: 1rem;
 }
 
 .card-texto {
-  flex: 1; /* Ocupa todo o resto do espaço */
-  padding: 2.5rem; /* O padding agora vai aqui dentro */
+  flex: 1; 
+  padding: 2.5rem; 
   font-size: 2rem;
 }
 
@@ -572,19 +525,14 @@ img {
 .disclaimer {
   font-size: 1.4rem;
   font-style: italic;
-  color: var(--cor-creme-claro); /* Assumindo a mesma cor de texto da esquerda */
+  color: var(--cor-creme-claro); 
   text-align: right;
   padding-right: 1.5rem;
 }
 @media (max-width: 768px) {
-  
-  /* AJUSTES NA SEÇÃO HERO PARA MOBILE */
   .hero {
-    /* Troca a imagem de fundo pela versão mobile */
     background-image: url('img/MOBILE_HEADER_IMG.png');
     background-position: center center;
-    
-    /* Ajusta a grade para o layout vertical */
     grid-template-columns: 1fr;
     grid-template-rows: 55% 45%;
     align-items: start;
@@ -592,124 +540,103 @@ img {
   }
 
   .hero-content {
-    /* Posiciona o conteúdo na primeira linha (área laranja) */
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-
-    /* Ajusta os espaçamentos para telas menores */
-    padding: 6rem 2.5rem 2rem 2.5rem; /* Aumentei um pouco o padding lateral */
+    padding: 6rem 2.5rem 2rem 2.5rem; 
     text-align: center;
   }
 
-  /* --- AJUSTES DE FONTE E ELEMENTOS ESPECÍFICOS --- */
-
   .hero-content h1 {
-    font-size: 6rem; /* Tamanho do título para mobile */
+    font-size: 6rem; 
   }
   
   .hero-subtitle {
-    font-size: 1.4rem; /* Subtítulo menor e mais delicado */
-    padding: 0.8rem 1.5rem; /* Padding um pouco menor */
+    font-size: 1.4rem;
+    padding: 0.8rem 1.5rem;
   }
 
   .hero-text {
-    font-size: 1.5rem; /* Tamanho do texto de apoio */
+    font-size: 1.5rem; 
     line-height: 1.5;
-    max-width: 100%; /* Remove a limitação de largura no mobile */
+    max-width: 100%;
   }
 
   .hero-label {
-    font-size: 1.2rem; /* Tamanho do label ajustado */
+    font-size: 1.2rem; 
   }
 
   .btn-primary {
-    font-size: 1.4rem; /* Tamanho do botão drasticamente reduzido para caber */
-    padding: 1.2rem 2.4rem; /* Padding do botão também menor */
+    font-size: 1.4rem; 
+    padding: 1.2rem 2.4rem;
   }
 
 .pitch-section {
   background-image: url('img/MOBILE_SECTION_2_IMG.png');
   background-position: center top;
   background-size: cover;
-  
-  /* 1. CRIA AS DUAS LINHAS (CIMA E BAIXO) */
   grid-template-columns: 1fr;
-  grid-template-rows: 40% 60%; /* Linha de cima com 40%, de baixo com 60% */
-
-  /* 3. ALINHA O CONTEÚDO NO TOPO DA SUA LINHA */
-  align-items: start; /* << O ajuste que você pediu */
-  
+  grid-template-rows: 40% 60%;
+  align-items: start;
   min-height: 100vh;
   padding: 0;
 }
 
 .content-right {
-  /* 2. FORÇA O CONTEÚDO A FICAR NA SEGUNDA LINHA */
-  grid-row: 2 / 3; /* << ESTA É A LINHA CRÍTICA */
-  grid-column: 1 / 2;
-  
+  grid-row: 2 / 3; 
+  grid-column: 1 / 2; 
   padding: 2.5rem;
   text-align: center;
 }
 
 .pitch-section h2 {
-  font-size: 4rem; /* Título menor para caber na tela */
+  font-size: 4rem;
   margin-bottom: 3.5rem;
 }
 
 .checklist {
-  display: inline-flex; /* Chave para o bloco se ajustar ao conteúdo */
-  flex-direction: column; /* Mantém os itens empilhados */
+  display: inline-flex; 
+  flex-direction: column;
   align-items: flex-start;
   margin-bottom: 3rem;
 }
 
 .check-item {
-  justify-content: flex-start; /* Chave para alinhar os itens no início */
-  flex-direction: row-reverse; /* Mantém o check antes do texto no mobile */
+  justify-content: flex-start;
+  flex-direction: row-reverse;
   gap: 1.5rem;
   font-size: 1.6rem;
-  font-weight: 600; /* Adicionei para manter o peso da fonte do desktop */
+  font-weight: 600;
 }
 
 .final-text {
   font-size: 1.6rem;
 }
 .consultoria-section {
-  /* 1. TROCA a imagem de fundo pela versão mobile */
   background-image: url('img/MOBILE_SECTION_3_IMG.png');
-  background-position: center top; /* Foca no topo da imagem */
+  background-position: center top;
   background-size: cover;
-
-  /* 2. MUDA para uma coluna única com 3 linhas */
   grid-template-columns: 1fr;
-  /* As 3 linhas, com base nas suas medidas, de forma proporcional */
   grid-template-rows: 230fr 700fr 550fr;
-  min-height: 150vh; /* Altura maior para acomodar a imagem alta e o conteúdo */
+  min-height: 150vh; 
 }
 
-/* Escondemos a coluna da esquerda que não é usada no mobile */
 .consultoria-left {
   display: none;
 }
 
-/* A coluna da direita agora ocupa a tela toda e é posicionada no meio */
 .consultoria-right {
-  grid-column: 1 / 2; /* Ocupa a única coluna */
-  grid-row: 2 / 3;    /* << OCUPA A LINHA DO MEIO */
-  display: block;     /* Deixa de ser um grid aninhado */
-  align-self: center; /* Centraliza verticalmente o conteúdo na sua linha */
+  grid-column: 1 / 2; 
+  grid-row: 2 / 3;   
+  display: block;    
+  align-self: center; 
 }
 
-/* O conteúdo de texto é ajustado para o mobile */
 .consultoria-content {
-  /* Reseta as propriedades de grid que não são mais necessárias */
   grid-row: auto; 
-  padding: 0 2.5rem; /* Padding lateral para o texto não colar nas bordas */
-  text-align: center; /* Centraliza todo o texto */
+  padding: 0 2.5rem; 
+  text-align: center; 
 }
 
-/* Reduzimos drasticamente as fontes do desktop */
 .consultoria-content p {
   font-size: 2rem;
   margin-bottom: 2.5rem;
@@ -721,38 +648,31 @@ img {
 }
 .como-funciona-section {
   background-image: url('img/MOBILE_SECTION_4.png');
-  background-position: center bottom; /* Mantém as planilhas embaixo */
+  background-position: center bottom; 
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  
-  /* --- MUDANÇA PRINCIPAL PARA CORRIGIR O LAYOUT --- */
-  display: flex; /* Muda de Grid para Flexbox */
-  flex-direction: column; /* Empilha os itens verticalmente */
-  justify-content: flex-start; /* Alinha o conteúdo NO TOPO */
-  
-  /* Remove o padding antigo do grid */
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
   padding: 0;
 }
 
-/* SUBSTITUA A REGRA .como-funciona-content */
 .como-funciona-content {
-  grid-column: auto; /* Reseta a regra de grid */
-  padding: 5rem 2.5rem; /* Adiciona o padding aqui (5rem no topo, 2.5rem nas laterais) */
+  grid-column: auto; 
+  padding: 5rem 2.5rem; 
   text-align: center;
-  width: 100%; /* Garante que ocupe a largura */
+  width: 100%;
 }
 
 .como-funciona-content h2 {
-  font-size: 5rem; /* Tamanho ajustado para mobile */
+  font-size: 5rem;
   line-height: 1.1;
   margin-bottom: 2rem;
-  padding: 0.8rem 1.5rem; /* Padding menor para o fundo do título */
-  border-radius: 8px; /* Borda arredondada menor */
-  
-  /* Gradiente e cor do texto se mantêm, mas o alinhamento é central */
-  text-align: center; /* << Centraliza o título */
-  display: inline-block; /* Mantém o fundo ajustado ao texto */
+  padding: 0.8rem 1.5rem; 
+  border-radius: 8px; 
+  text-align: center; 
+  display: inline-block; 
 }
 
 .como-funciona-content .subtitulo {
@@ -763,22 +683,21 @@ img {
 .como-funciona-content p {
   font-size: 1.8rem;
   margin-bottom: 2rem;
-  max-width: none; /* Remove a limitação de largura */
+  max-width: none; 
 }
 
 
 .etapas-titulo-principal {
-  font-size: 5rem; /* Reduz drasticamente o título de 10rem */
+  font-size: 5rem;
   line-height: 1.2;
 }
 
 
 
 .etapas-grid {
-  /* 1. MUDA A GRADE para uma única coluna */
   grid-template-columns: 1fr;
-  gap: 2.5rem; /* Um bom espaçamento entre os cards empilhados */
-  padding-left: 7rem;  /* Adiciona o espaçamento à esquerda */
+  gap: 2.5rem;
+  padding-left: 7rem;  
   padding-right: 7rem;
 }
 
@@ -791,8 +710,6 @@ img {
   line-height: 1.6;
 }
 
-/* 2. DESABILITA O EFEITO DE FOCO/HOVER NO MOBILE */
-/* Isso previne bugs em telas de toque */
 .etapas-grid:hover > .etapa-card {
   transform: none;
   opacity: 1;
@@ -801,105 +718,98 @@ img {
 .etapas-grid:hover > .etapa-card:hover {
   transform: none;
   opacity: 1;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Mantém a sombra padrão */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
-/* Dentro da sua @media (max-width: 768px) { ... } */
-
-/* --- AJUSTES NA DEPOIMENTOS SECTION PARA MOBILE --- */
 .depoimentos-section {
-  /* 1. MUDA para coluna única */
   grid-template-columns: 1fr;
   padding: 13rem 2.5rem 5rem;
   gap: 10rem;
-  background-image: url('img/MOBILE_SECTION_6.png'); /* << NOME DA IMAGEM ATUALIZADO */
+  background-image: url('img/MOBILE_SECTION_6.png'); 
   background-position: center top;
   background-size: cover;
 }
 
-/* 3. REORDENAÇÃO dos elementos da coluna da esquerda */
 .depoimentos-content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza tudo */
+  align-items: center; 
   text-align: center;
 }
 
 .depoimentos-content h2 {
-  order: 1; /* Título vem primeiro */
-  font-size: 5rem; /* Ajuste de fonte */
+  order: 1; 
+  font-size: 5rem; 
   line-height: 1.1;
-  color: var(--cor-azul); /* Mantém a cor do texto */
+  color: var(--cor-azul);
 }
 
 .depoimentos-content h2 .highlight-white {
-   color: var(--cor-creme-claro); /* Mantém destaque */
+   color: var(--cor-creme-claro); 
 }
 
 .depoimentos-content .texto-principal {
-  order: 2; /* Texto principal em segundo */
+  order: 2; 
   font-size: 1.7rem;
   color: var(--cor-azul);
 }
 
 .depoimentos-content .texto-secundario {
-  order: 3; /* Texto secundário em terceiro */
+  order: 3; 
   font-size: 1.8rem;
-  color: var(--cor-creme-claro); /* Cor creme, como no design mobile */
-  margin-bottom: 3rem; /* Espaço antes do label */
+  color: var(--cor-creme-claro);
+  margin-bottom: 3rem; 
 }
 
 .label-depoimento {
-  order: 4; /* Label vem por último no bloco */
+  order: 4; 
   font-size: 1.6rem;
-  color: var(--cor-azul); /* Cor do label no mobile */
-  padding-left: 0; /* Remove o espaço da barra */
-  margin-bottom: 3rem; /* Espaço antes dos cards */
+  color: var(--cor-azul); 
+  padding-left: 0;
+  margin-bottom: 3rem; 
   position: relative;
 }
 
-/* Esconde a barra azul vertical no mobile */
 .label-depoimento::before {
   display: none;
 }
 .label-depoimento::after {
-  content: ''; /* Obrigatório */
+  content: ''; 
   position: absolute;
-  left: 50%; /* Centraliza a barra */
-  bottom: -1.5rem; /* Posiciona a barra 1.5rem abaixo do texto */
-  transform: translateX(-50%); /* Garante a centralização perfeita */
+  left: 50%; 
+  bottom: -1.5rem;
+  transform: translateX(-50%); 
 
-  width: 100px; /* Largura da barra (ajuste se necessário) */
-  height: 3px; /* Altura/espessura da barra */
+  width: 100px;
+  height: 3px;
   background-color: var(--cor-azul);
   border-radius: 2px;
 }
 
 .card-depoimento {
-  display: block; /* << MUDA DE 'flex' PARA 'block' (layout vertical) */
+  display: block; 
   min-height: auto;
 }
 
-/* ADICIONE ESTAS NOVAS REGRAS */
 .card-imagem {
-  flex: none; /* Reseta o flex do desktop */
-  width: 100%; /* Faz a imagem ocupar a largura total do card */
-  height: auto; /* Deixa a altura da imagem ser automática */
+  flex: none;
+  width: 100%;
+  height: auto;
 }
 
 .card-texto {
-  flex: none; /* Reseta o flex do desktop */
-  padding: 2.5rem; /* Mantém o padding para o texto */
-  text-align: left; /* Garante o alinhamento do texto */
+  flex: none; 
+  padding: 2.5rem; 
+  text-align: left;
 }
 
 .card-texto p {
-  font-size: 1.5rem; /* Diminui um pouco a fonte para o mobile */
+  font-size: 1.5rem;
 }
 
 .disclaimer {
   text-align: center;
   padding: 1rem 0 0 0;
-  color: var(--cor-creme-claro); /* Cor creme para o disclaimer */
+  color: var(--cor-creme-claro); 
 }
 }
