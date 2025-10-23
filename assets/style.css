@@ -875,9 +875,26 @@ img {
   border-radius: 2px;
 }
 
-/* 4. AJUSTES nos cards da coluna da direita */
 .card-depoimento {
-  min-height: auto; /* Remove a altura mínima do desktop */
+  display: block; /* << MUDA DE 'flex' PARA 'block' (layout vertical) */
+  min-height: auto;
+}
+
+/* ADICIONE ESTAS NOVAS REGRAS */
+.card-imagem {
+  flex: none; /* Reseta o flex do desktop */
+  width: 100%; /* Faz a imagem ocupar a largura total do card */
+  height: auto; /* Deixa a altura da imagem ser automática */
+}
+
+.card-texto {
+  flex: none; /* Reseta o flex do desktop */
+  padding: 2.5rem; /* Mantém o padding para o texto */
+  text-align: left; /* Garante o alinhamento do texto */
+}
+
+.card-texto p {
+  font-size: 1.5rem; /* Diminui um pouco a fonte para o mobile */
 }
 
 .disclaimer {
