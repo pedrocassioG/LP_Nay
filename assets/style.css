@@ -475,10 +475,26 @@ img {
 }
 
 .label-depoimento {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
+  color: var(--cor-creme-claro); /* 1. Cor do texto alterada */
+  position: relative;            /* 2. Essencial para a barra funcionar */
+  padding-left: 1.5rem;          /* 3. Cria espaço para a barra */
+}
+
+.label-depoimento::before {
+  content: ''; /* Obrigatório para pseudo-elementos */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Centraliza a barra verticalmente */
+
+  width: 4px; /* Largura da barra */
+  height: 5rem; /* Altura da barra (um pouco maior que a fonte) */
+  background-color: var(--cor-azul); /* Cor da barra */
+  border-radius: 2px;
 }
 
 .depoimentos-content h2 {
