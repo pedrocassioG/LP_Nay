@@ -454,9 +454,117 @@ img {
 }
 
 /* ======================================================= */
-/* 6. RESPONSIVIDADE (MEDIA QUERIES)                       */
+/* DEPOIMENTOS SECTION                                     */
 /* ======================================================= */
+.depoimentos-section {
+  background-image: url('img/WEB._SECTION_6.png'); /* << ADICIONE O NOME DA SUA IMAGEM DE FUNDO AQUI */
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+  align-items: center;
+  gap: 4rem;
+  padding: 8rem 5%; /* Padding lateral de 5% */
+}
+
+/* Coluna da Esquerda */
+.depoimentos-content {
+  color: var(--cor-azul); /* Cor do texto da esquerda (Confirmado) */
+}
+
+.label-depoimento {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.depoimentos-content h2 {
+  font-family: var(--fonte-h1);
+  font-size: 10rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 3rem;
+}
+
+.depoimentos-content h2 .highlight-white {
+  color: var(--cor-creme-claro); /* Cor do destaque (Confirmado) */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.depoimentos-content .texto-principal {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.depoimentos-content .texto-secundario {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+/* Coluna da Direita */
+.depoimentos-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; /* Espaço entre os cards */
+}
+
+.card-depoimento {
+  display: flex; /* A CHAVE: cria o layout de 2 colunas */
+  align-items: stretch; /* Força as duas colunas a terem a mesma altura */
+  
+  background-color: #FFFFFF;
+  color: var(--cor-azul);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  
+  overflow: hidden; /* MUITO IMPORTANTE: para o border-radius cortar a imagem */
+}
+.card-imagem {
+  flex: 0 0 150px; /* Define uma largura fixa de 150px para a imagem */
+  /* 'flex: 0 0 150px' = não cresce, não encolhe, largura de 150px */
+}
+
+.card-imagem img {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  object-fit: cover; /* Garante que a imagem preencha o espaço (o "quadrado") */
+}
+
+.card-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha o espaço (o "quadrado") */
+}
+
+.card-texto {
+  flex: 1; /* Ocupa todo o resto do espaço */
+  padding: 2.5rem; /* O padding agora vai aqui dentro */
+  font-size: 2rem;
+}
+
+.card-texto p:first-of-type {
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.disclaimer {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--cor-azul); /* Assumindo a mesma cor de texto da esquerda */
+  text-align: right;
+  padding-right: 1.5rem;
+}
 @media (max-width: 768px) {
   
   /* AJUSTES NA SEÇÃO HERO PARA MOBILE */
