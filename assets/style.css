@@ -553,10 +553,16 @@ img {
 }
 
 .sobre-content p {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   line-height: 1.7;
   margin-bottom: 2rem;
   max-width: 60ch;
+}
+.sobre-content p strong {
+  /* Altere as propriedades aqui */
+  font-size: 2.7rem;
+  font-weight: 1000; /* Deixa o negrito um pouco mais forte que o padrão */
+  color: inherit;   /* Por padrão, herda a cor azul do parágrafo. Você pode mudar. */
 }
 
 /* --- EFEITO DO TÍTULO "SOU NAY" ADAPTADO --- */
@@ -617,6 +623,23 @@ img {
 }
 /* --- FIM DO EFEITO DO TÍTULO --- */
 
+.abefin-label {
+  position: relative; /* "Ancora" a barra a este texto */
+  padding-left: 2.5rem; /* Cria espaço para a barra */
+  font-weight: 1000; /* Deixa o texto um pouco mais forte */
+}
+
+.abefin-label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Centraliza a barra verticalmente */
+  width: 5px; /* Largura da barra */
+  height: 100%; /* Altura da barra (ocupa a altura toda do texto) */
+  background-color: var(--cor-verde-claro); /* A cor verde que você pediu */
+  border-radius: 2px;
+}
 
 .lista-ajuda {
   display: flex;
@@ -629,11 +652,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  /* Cores dos botões (Confirmado) */
   background-color: var(--cor-azul);
   color: var(--cor-creme-claro);
-  
   padding: 1.5rem 2rem;
   border-radius: 10px;
   font-weight: 600;
