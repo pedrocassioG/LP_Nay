@@ -641,28 +641,27 @@ img {
   border-radius: 2px;
 }
 
-.lista-ajuda {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 3rem;
-}
-
 .item-ajuda {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: center; /* << CHAVE: Centraliza o ícone e a caixa de texto verticalmente */
+  gap: 2rem; 
+}
+
+.item-ajuda p {
   background-color: var(--cor-azul);
   color: var(--cor-creme-claro);
-  padding: 1.5rem 2rem;
   border-radius: 10px;
   font-weight: 600;
   font-size: 1.6rem;
+  flex: 1;
+  padding: 1.2rem 2rem; 
 }
 
 .item-ajuda img {
   width: 40px;
-  height: 40px;
+  height: 60px;
+  flex-shrink: 0; /* Impede que o ícone encolha se não houver espaço */
+  padding-bottom: 1.3rem;
 }
 
 
