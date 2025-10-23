@@ -543,20 +543,22 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 8rem 0;
+  padding: 12rem 0;
 }
 
 .sobre-content {
   grid-column: 2 / 3;
   padding-right: 15%;
   color: var(--cor-azul); /* Cor do texto (Confirmado) */
+
 }
 
 .sobre-content p {
-  font-size: 2.3rem;
-  line-height: 1.7;
+  font-size: 2rem;
+  line-height: 2;
   margin-bottom: 2rem;
   max-width: 60ch;
+
 }
 .sobre-content p strong {
   /* Altere as propriedades aqui */
