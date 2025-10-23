@@ -948,6 +948,97 @@ img {
   padding: 1rem 0 0 0;
   color: var(--cor-creme-claro); 
 }
+
+.sobre-section {
+  /* 1. MUDA para coluna única e se torna âncora */
+  grid-template-columns: 1fr;
+  position: relative; /* Essencial para o título flutuar */
+  
+  /* 2. TROCA a imagem de fundo */
+  background-image: url('img/MOBILE_SECTION_7.png');
+  background-position: center top;
+  background-size: 100% auto; /* Ajusta à largura, altura automática */
+  background-repeat: no-repeat;
+  
+  padding: 0; /* Remove o padding do desktop */
+  min-height: 100vh;
+}
+
+/* 3. AJUSTA O CONTEÚDO PRINCIPAL (o texto de baixo) */
+.sobre-content {
+  grid-column: 1 / 2;
+  color: var(--cor-azul);
+  padding: 0 2.5rem 5rem 2.5rem; /* Padding lateral e inferior */
+  text-align: center; /* Centraliza todo o texto de baixo */
+  
+  /* EMPURRA o conteúdo para baixo da imagem */
+  padding-top: 65vh; /* << Ajuste este valor para o texto começar no lugar certo */
+}
+
+/* 4. FAZ O TÍTULO FLUTUAR (Absolute) */
+.titulo-nay-card {
+  position: absolute;
+  top: 3rem; /* Distância do topo */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Ajusta o tamanho para mobile */
+  width: 90%;
+  max-width: 350px;
+  height: 120px;
+  
+  margin-bottom: 0; /* Remove a margem que não é mais necessária */
+}
+
+.titulo-nay-card .bg {
+  width: calc(100% - 10px); /* Ajusta o .bg ao novo tamanho */
+  height: 110px;
+}
+
+.titulo-nay-text {
+  font-size: 4rem; /* Reduz a fonte do título */
+}
+
+/* 5. AJUSTES NOS TEXTOS E BOTÕES */
+.abefin-label {
+  padding-left: 0; /* Remove o padding da barra */
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 3rem
+}
+
+.abefin-label::before {
+  display: none; /* Esconde a barra no mobile */
+}
+
+.sobre-content p {
+  font-size: 1.6rem;
+  max-width: none; /* Remove o max-width */
+    padding: 0 3rem
+}
+.sobre-content p strong {
+  font-size: 1.8rem;
+}
+
+.lista-ajuda {
+  align-items: center; /* Centraliza a lista de botões */
+}
+
+.item-ajuda {
+  gap: 1.5rem; /* Espaço menor entre ícone e texto */
+  width: 100%; /* Faz os botões ocuparem a largura */
+}
+
+.item-ajuda img {
+  width: 30px; /* Ícones menores */
+  height: 30px;
+}
+
+.item-ajuda p {
+  height: 30px; /* Altura do botão menor */
+  font-size: 1.4rem;
+  padding: 0 1.5rem;
+}
 }
 
 @keyframes blob-bounce {
