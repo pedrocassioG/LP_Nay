@@ -133,8 +133,8 @@ img {
   font-family: var(--fonte-corpo);
   font-weight: 600;
   font-size: var(--fs-h2);
-  color: var(--cor-creme-claro);
-  background-color: var(--cor-verde-escuro);
+  background-color: var(--cor-creme-claro);
+  color: var(--cor-verde-escuro);
   padding: 1.5rem 3rem;
   border-radius: 5px;
   text-transform: uppercase;
@@ -142,8 +142,8 @@ img {
 }
 
 .btn-primary:hover {
-  background-color: var(--cor-creme-claro);
-  color: var(--cor-verde-escuro);
+  color: var(--cor-creme-claro);
+  background-color: var(--cor-verde-escuro);
   transform: translateY(-3px);
 }
 
