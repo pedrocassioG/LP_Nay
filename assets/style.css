@@ -813,6 +813,76 @@ img {
   opacity: 1;
 }
 /* --- FIM DO NOVO BOTÃO --- */
+.pra-quem-section {
+  background-image: url('img/WEB_SECTION_9.png');
+  background-position: left top; /* Alinha a imagem à esquerda */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--cor-azul); /* Cor de fundo principal */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas 50/50 */
+
+}
+
+.pra-quem-content {
+  grid-column: 2 / 3; /* Posiciona o conteúdo na segunda coluna */
+  padding-right: 15%; /* Espaço na borda direita */
+  padding-left: 2rem; /* Pequeno respiro da linha central */
+  padding-top: 25rem;
+  text-align: center;
+  margin-bottom: 20rem;
+
+}
+
+.pra-quem-content h2 {
+  font-family: var(--fonte-h1);
+  font-size: 18rem;
+  font-weight: 300;
+  color: var(--cor-creme-claro); /* << Placeholder */
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  position: relative; /* Necessário para posicionar a barra */
+  display: inline-block;
+}
+
+.pra-quem-content h2::after {
+  content: ''; /* Essencial para pseudo-elementos */
+  display: block; /* Para ocupar a largura total e quebrar a linha */
+  width: 100%; /* Ocupa a largura do h2 */
+  height: 10px; /* Espessura da barra */
+  background-color: var(--cor-verde-claro); /* Cor verde da identidade */
+  margin-top: 1rem; /* Espaço entre o título e a barra */
+  border-radius: 2px;
+}
+
+.pra-quem-content .subtitulo {
+  font-size: 4.8rem;
+  font-weight: 600;
+  /* PERGUNTA: Cor é --cor-creme-claro? */
+  color: var(--cor-creme-claro); /* << Placeholder */
+  margin-bottom: 3rem;
+}
+
+.lista-pra-quem {
+  list-style: none; /* Remove as bolinhas padrão da lista */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Espaço entre os itens da lista */
+}
+
+.lista-pra-quem li {
+  /* PERGUNTA: Qual a cor de fundo? */
+  background-color: #0d3a9b; /* << Placeholder (Azul escuro) */
+  color: var(--cor-creme-claro); /* << Placeholder */
+  
+  padding: 1.5rem 2rem;
+  border-radius: 100px; /* Bordas bem arredondadas */
+  font-size: 2rem;
+  font-weight: 600;
+  border: 2px solid var(--cor-azul-claro);
+}
 
 @media (max-width: 768px) {
   .hero {
