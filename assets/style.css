@@ -1325,6 +1325,57 @@ img {
   height: 400px;
 
 }
+/* Dentro da sua @media (max-width: 768px) { ... } */
+
+/* --- AJUSTES NA PRA QUEM É SECTION PARA MOBILE --- */
+.pra-quem-section {
+  /* 1. TROCA a imagem de fundo */
+  background-image: url('img/MOBILE_SECTION_9.png');
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinha o conteúdo no topo */
+  grid-template-columns: 1fr; /* Reseta o grid do desktop */
+  min-height: 100vh; /* Ocupa a altura da tela */
+
+}
+
+.pra-quem-content {
+  grid-column: 1 / 2; /* Ocupa a coluna única */
+  padding: 0 2.5rem; /* Padding lateral */
+  text-align: center; /* Centraliza tudo */
+  width: 100%;
+}
+
+.pra-quem-content h2 {
+  font-size: 4rem; /* Reduz o título */
+  margin-bottom: 2rem;
+  display: inline-block; /* Mantém o display para a barra funcionar */
+}
+
+/* Garante que a barra continue centralizada */
+.pra-quem-content h2::after {
+  margin-top: 0.5rem; /* Ajusta o espaço da barra */
+  height: 4px;
+}
+
+.pra-quem-content .subtitulo {
+  font-size: 2rem; /* Reduz o subtítulo */
+  margin-bottom: 1.5rem;
+}
+
+.lista-pra-quem {
+  align-items: center; /* Garante que a lista fique centralizada */
+  gap: 1rem; /* Espaço menor entre as pílulas */
+}
+
+.lista-pra-quem li {
+  font-size: 1.4rem; /* Fonte menor nas pílulas */
+  padding: 1rem 1.8rem; /* Padding menor */
+  width: 100%; /* Faz as pílulas ocuparem a largura */
+  max-width: 400px; /* Limita a largura máxima no mobile */
+}
 }
 
 @keyframes blob-bounce {
