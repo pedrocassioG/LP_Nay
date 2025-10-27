@@ -1295,7 +1295,7 @@ img {
 /* O conteúdo de baixo agora é posicionado absolutamente */
 .cta-content-bottom {
   position: absolute;
-  bottom: 1.5rem; /* << Distância da borda inferior (ajuste aqui!) */
+  bottom: 0.5rem; /* << Distância da borda inferior (ajuste aqui!) */
   left: 50%;
   transform: translateX(-50%);
   
