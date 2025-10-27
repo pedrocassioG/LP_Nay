@@ -1004,7 +1004,7 @@ img {
 }
 .como-funciona-section {
   background-image: url('img/MOBILE_SECTION_4.png');
-  background-position: center bottom; 
+  background-position: center center; 
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
