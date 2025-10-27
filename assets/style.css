@@ -892,6 +892,7 @@ img {
     grid-template-rows: 55% 45%;
     align-items: start;
     min-height: 100vh;
+    margin-bottom: 0.1rem;
   }
 
   .hero-content {
