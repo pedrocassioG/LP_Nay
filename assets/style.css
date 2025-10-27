@@ -1352,7 +1352,10 @@ img {
 
 .pra-quem-content {
   grid-column: 1 / 2; /* Ocupa a coluna única */
-  padding: 0 2.5rem; /* Padding lateral */
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 2rem;
+  padding-right: 2rem; /* Padding lateral */
   text-align: center; /* Centraliza tudo */
   width: 100%;
 }
