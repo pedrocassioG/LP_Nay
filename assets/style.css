@@ -1004,7 +1004,7 @@ img {
 }
 .como-funciona-section {
   background-image: url('img/MOBILE_SECTION_4.png');
-  background-position: center top; 
+  background-position: center center; 
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -1012,7 +1012,7 @@ img {
   flex-direction: column; 
   justify-content: flex-start; 
   padding: 0;
-  padding-bottom: 40vh;
+  padding-bottom: 45vh;
 }
 
 .como-funciona-content {
