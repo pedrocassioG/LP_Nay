@@ -887,7 +887,7 @@ img {
 @media (max-width: 768px) {
   .hero {
     background-image: url('img/MOBILE_HEADER_IMG.png');
-    background-position: center top;
+    background-position: center center;
     grid-template-columns: 1fr;
     grid-template-rows: 55% 45%;
     align-items: start;
