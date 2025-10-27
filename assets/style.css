@@ -1011,6 +1011,7 @@ img {
   flex-direction: column; 
   justify-content: flex-start; 
   padding: 0;
+  padding-bottom: 40vh;
 }
 
 .como-funciona-content {
@@ -1191,7 +1192,7 @@ img {
   text-align: center; /* Centraliza todo o texto de baixo */
   
   /* EMPURRA o conteúdo para baixo da imagem */
-  padding-top: 65vh; /* << Ajuste este valor para o texto começar no lugar certo */
+  padding-top: 85vh;
 }
 
 /* 4. FAZ O TÍTULO FLUTUAR (Absolute) */
@@ -1293,7 +1294,7 @@ img {
 /* O conteúdo de baixo agora é posicionado absolutamente */
 .cta-content-bottom {
   position: absolute;
-  bottom: 4rem; /* << Distância da borda inferior (ajuste aqui!) */
+  bottom: 1.5rem; /* << Distância da borda inferior (ajuste aqui!) */
   left: 50%;
   transform: translateX(-50%);
   
@@ -1338,7 +1339,7 @@ img {
   justify-content: flex-start; /* Alinha o conteúdo no topo */
   grid-template-columns: 1fr; /* Reseta o grid do desktop */
   min-height: 100vh; /* Ocupa a altura da tela */
-
+  padding-bottom: 35vh
 }
 
 .pra-quem-content {
