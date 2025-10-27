@@ -1302,7 +1302,7 @@ img {
   position: static; 
   
   /* ADICIONAMOS MARGIN-TOP GRANDE */
-  margin-top: 55vh; /* << AJUSTE ESTE VALOR (55% da altura da tela) */
+  margin-top: 60vh; /* << AJUSTE ESTE VALOR (55% da altura da tela) */
   
   /* Estilos que já tínhamos */
   display: flex;
